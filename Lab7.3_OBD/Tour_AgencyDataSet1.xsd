@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Tour_AgencyDataSet1" targetNamespace="http://tempuri.org/Tour_AgencyDataSet1.xsd" xmlns:mstns="http://tempuri.org/Tour_AgencyDataSet1.xsd" xmlns="http://tempuri.org/Tour_AgencyDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Tour_AgencyConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Tour_AgencyConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Lab7._3_OBD.Properties.Settings.GlobalReference.Default.Tour_AgencyConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TourTableAdapter" GeneratorDataComponentClassName="TourTableAdapter" Name="Tour" UserDataComponentName="TourTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Tour_AgencyConnectionString (Settings)" DbObjectName="Tour_Agency.dbo.Tour" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Type_Of_Tour FROM dbo.Tour</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Type_Of_Tour" DataSetColumn="Type_Of_Tour" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Tour_AgencyDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Tour_AgencyDataSet1" msprop:Generator_DataSetName="Tour_AgencyDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Tour" msprop:Generator_RowEvHandlerName="TourRowChangeEventHandler" msprop:Generator_RowDeletedName="TourRowDeleted" msprop:Generator_RowDeletingName="TourRowDeleting" msprop:Generator_RowEvArgName="TourRowChangeEvent" msprop:Generator_TablePropName="Tour" msprop:Generator_RowChangedName="TourRowChanged" msprop:Generator_RowChangingName="TourRowChanging" msprop:Generator_TableClassName="TourDataTable" msprop:Generator_RowClassName="TourRow" msprop:Generator_TableVarName="tableTour" msprop:Generator_UserTableName="Tour">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type_Of_Tour" msprop:Generator_ColumnPropNameInRow="Type_Of_Tour" msprop:Generator_ColumnPropNameInTable="Type_Of_TourColumn" msprop:Generator_ColumnVarNameInTable="columnType_Of_Tour" msprop:Generator_UserColumnName="Type_Of_Tour">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

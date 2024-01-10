@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetTour" targetNamespace="http://tempuri.org/DataSetTour.xsd" xmlns:mstns="http://tempuri.org/DataSetTour.xsd" xmlns="http://tempuri.org/DataSetTour.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Tour_AgencyConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Tour_AgencyConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Lab7._3_OBD.Properties.Settings.GlobalReference.Default.Tour_AgencyConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Type_of_the_tour_viewTableAdapter" GeneratorDataComponentClassName="Type_of_the_tour_viewTableAdapter" Name="Type_of_the_tour_view" UserDataComponentName="Type_of_the_tour_viewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Tour_AgencyConnectionString2 (Settings)" DbObjectName="Tour_Agency.dbo.Type_of_the_tour_view" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NameTour, Description, TypeOfTour, Country, StartDate, EndDate, Cost FROM dbo.Type_of_the_tour_view</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NameTour" DataSetColumn="NameTour" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="TypeOfTour" DataSetColumn="TypeOfTour" />
+              <Mapping SourceColumn="Country" DataSetColumn="Country" />
+              <Mapping SourceColumn="StartDate" DataSetColumn="StartDate" />
+              <Mapping SourceColumn="EndDate" DataSetColumn="EndDate" />
+              <Mapping SourceColumn="Cost" DataSetColumn="Cost" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetTour" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSetTour" msprop:Generator_DataSetName="DataSetTour">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Type_of_the_tour_view" msprop:Generator_RowEvHandlerName="Type_of_the_tour_viewRowChangeEventHandler" msprop:Generator_RowDeletedName="Type_of_the_tour_viewRowDeleted" msprop:Generator_RowDeletingName="Type_of_the_tour_viewRowDeleting" msprop:Generator_RowEvArgName="Type_of_the_tour_viewRowChangeEvent" msprop:Generator_TablePropName="Type_of_the_tour_view" msprop:Generator_RowChangedName="Type_of_the_tour_viewRowChanged" msprop:Generator_RowChangingName="Type_of_the_tour_viewRowChanging" msprop:Generator_TableClassName="Type_of_the_tour_viewDataTable" msprop:Generator_RowClassName="Type_of_the_tour_viewRow" msprop:Generator_TableVarName="tableType_of_the_tour_view" msprop:Generator_UserTableName="Type_of_the_tour_view">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NameTour" msprop:Generator_ColumnPropNameInRow="NameTour" msprop:Generator_ColumnPropNameInTable="NameTourColumn" msprop:Generator_ColumnVarNameInTable="columnNameTour" msprop:Generator_UserColumnName="NameTour">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_UserColumnName="Description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TypeOfTour" msprop:Generator_ColumnPropNameInRow="TypeOfTour" msprop:Generator_ColumnPropNameInTable="TypeOfTourColumn" msprop:Generator_ColumnVarNameInTable="columnTypeOfTour" msprop:Generator_UserColumnName="TypeOfTour">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Country" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_UserColumnName="Country">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_UserColumnName="StartDate" type="xs:dateTime" />
+              <xs:element name="EndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_UserColumnName="EndDate" type="xs:dateTime" />
+              <xs:element name="Cost" msprop:Generator_ColumnPropNameInRow="Cost" msprop:Generator_ColumnPropNameInTable="CostColumn" msprop:Generator_ColumnVarNameInTable="columnCost" msprop:Generator_UserColumnName="Cost" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

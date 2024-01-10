@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetAirline" targetNamespace="http://tempuri.org/DataSetAirline.xsd" xmlns:mstns="http://tempuri.org/DataSetAirline.xsd" xmlns="http://tempuri.org/DataSetAirline.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Tour_AgencyConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Tour_AgencyConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Lab7._3_OBD.Properties.Settings.GlobalReference.Default.Tour_AgencyConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Airline_viewTableAdapter" GeneratorDataComponentClassName="Airline_viewTableAdapter" Name="Airline_view" UserDataComponentName="Airline_viewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Tour_AgencyConnectionString2 (Settings)" DbObjectName="Tour_Agency.dbo.Airline_view" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NameAirline, IATA, Country, Cost, Description FROM dbo.Airline_view</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NameAirline" DataSetColumn="NameAirline" />
+              <Mapping SourceColumn="IATA" DataSetColumn="IATA" />
+              <Mapping SourceColumn="Country" DataSetColumn="Country" />
+              <Mapping SourceColumn="Cost" DataSetColumn="Cost" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetAirline" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSetAirline" msprop:Generator_DataSetName="DataSetAirline">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Airline_view" msprop:Generator_RowEvHandlerName="Airline_viewRowChangeEventHandler" msprop:Generator_RowDeletedName="Airline_viewRowDeleted" msprop:Generator_RowDeletingName="Airline_viewRowDeleting" msprop:Generator_RowEvArgName="Airline_viewRowChangeEvent" msprop:Generator_TablePropName="Airline_view" msprop:Generator_RowChangedName="Airline_viewRowChanged" msprop:Generator_RowChangingName="Airline_viewRowChanging" msprop:Generator_TableClassName="Airline_viewDataTable" msprop:Generator_RowClassName="Airline_viewRow" msprop:Generator_TableVarName="tableAirline_view" msprop:Generator_UserTableName="Airline_view">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NameAirline" msprop:Generator_ColumnPropNameInRow="NameAirline" msprop:Generator_ColumnPropNameInTable="NameAirlineColumn" msprop:Generator_ColumnVarNameInTable="columnNameAirline" msprop:Generator_UserColumnName="NameAirline">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IATA" msprop:Generator_ColumnPropNameInRow="IATA" msprop:Generator_ColumnPropNameInTable="IATAColumn" msprop:Generator_ColumnVarNameInTable="columnIATA" msprop:Generator_UserColumnName="IATA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Country" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_UserColumnName="Country">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cost" msprop:Generator_ColumnPropNameInRow="Cost" msprop:Generator_ColumnPropNameInTable="CostColumn" msprop:Generator_ColumnVarNameInTable="columnCost" msprop:Generator_UserColumnName="Cost" type="xs:decimal" />
+              <xs:element name="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_UserColumnName="Description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Airline_view" />
+      <xs:field xpath="mstns:IATA" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

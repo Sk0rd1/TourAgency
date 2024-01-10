@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetReservation" targetNamespace="http://tempuri.org/DataSetReservation.xsd" xmlns:mstns="http://tempuri.org/DataSetReservation.xsd" xmlns="http://tempuri.org/DataSetReservation.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Tour_AgencyConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Tour_AgencyConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Lab7._3_OBD.Properties.Settings.GlobalReference.Default.Tour_AgencyConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Reservation_viewTableAdapter" GeneratorDataComponentClassName="Reservation_viewTableAdapter" Name="Reservation_view" UserDataComponentName="Reservation_viewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Tour_AgencyConnectionString1 (Settings)" DbObjectName="Tour_Agency.dbo.Reservation_view" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NameAirline, NameHotel, NameTour, TotalCost, FirstName, SecondName, StartDate, EndDate FROM dbo.Reservation_view</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NameAirline" DataSetColumn="NameAirline" />
+              <Mapping SourceColumn="NameHotel" DataSetColumn="NameHotel" />
+              <Mapping SourceColumn="NameTour" DataSetColumn="NameTour" />
+              <Mapping SourceColumn="TotalCost" DataSetColumn="TotalCost" />
+              <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
+              <Mapping SourceColumn="SecondName" DataSetColumn="SecondName" />
+              <Mapping SourceColumn="StartDate" DataSetColumn="StartDate" />
+              <Mapping SourceColumn="EndDate" DataSetColumn="EndDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetReservation" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSetReservation" msprop:Generator_DataSetName="DataSetReservation">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Reservation_view" msprop:Generator_RowEvHandlerName="Reservation_viewRowChangeEventHandler" msprop:Generator_RowDeletedName="Reservation_viewRowDeleted" msprop:Generator_RowDeletingName="Reservation_viewRowDeleting" msprop:Generator_RowEvArgName="Reservation_viewRowChangeEvent" msprop:Generator_TablePropName="Reservation_view" msprop:Generator_RowChangedName="Reservation_viewRowChanged" msprop:Generator_RowChangingName="Reservation_viewRowChanging" msprop:Generator_TableClassName="Reservation_viewDataTable" msprop:Generator_RowClassName="Reservation_viewRow" msprop:Generator_TableVarName="tableReservation_view" msprop:Generator_UserTableName="Reservation_view">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NameAirline" msprop:Generator_ColumnPropNameInRow="NameAirline" msprop:Generator_ColumnPropNameInTable="NameAirlineColumn" msprop:Generator_ColumnVarNameInTable="columnNameAirline" msprop:Generator_UserColumnName="NameAirline">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NameHotel" msprop:Generator_ColumnPropNameInRow="NameHotel" msprop:Generator_ColumnPropNameInTable="NameHotelColumn" msprop:Generator_ColumnVarNameInTable="columnNameHotel" msprop:Generator_UserColumnName="NameHotel">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NameTour" msprop:Generator_ColumnPropNameInRow="NameTour" msprop:Generator_ColumnPropNameInTable="NameTourColumn" msprop:Generator_ColumnVarNameInTable="columnNameTour" msprop:Generator_UserColumnName="NameTour">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalCost" msprop:Generator_ColumnPropNameInRow="TotalCost" msprop:Generator_ColumnPropNameInTable="TotalCostColumn" msprop:Generator_ColumnVarNameInTable="columnTotalCost" msprop:Generator_UserColumnName="TotalCost" type="xs:decimal" />
+              <xs:element name="FirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_UserColumnName="FirstName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SecondName" msprop:Generator_ColumnPropNameInRow="SecondName" msprop:Generator_ColumnPropNameInTable="SecondNameColumn" msprop:Generator_ColumnVarNameInTable="columnSecondName" msprop:Generator_UserColumnName="SecondName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_UserColumnName="StartDate" type="xs:dateTime" />
+              <xs:element name="EndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_UserColumnName="EndDate" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
