@@ -1,9 +1,9 @@
 # TourAgency
- Мій курсовий проєкт на тему: "Автоматизоване робоче місце працівника туристичного агенства".
+ My course project on the topic: "Automated workplace of a travel agency employee".
 
-Під час розробки було використано технології: Windows Forms (.NET Framework), Microsoft SQL Server.
+Technologies were used during development: Windows Forms (.NET Framework), Microsoft SQL Server.
 
-Деякі скріншоти, що відображають функціонал програми:
+Some screenshots showing the functionality of the program:
 ![Image alt](https://github.com/Sk0rd1/ImagesForReadMe/blob/main/TourAgency/program1.jpg)
 
 ![Image alt](https://github.com/Sk0rd1/ImagesForReadMe/blob/main/TourAgency/program2.jpg)
@@ -12,5 +12,5 @@
 
 ![Image alt](https://github.com/Sk0rd1/ImagesForReadMe/blob/main/TourAgency/program4.jpg)
 
-Структура БД:
+Database structure:
 ![Image alt](https://github.com/Sk0rd1/ImagesForReadMe/blob/main/TourAgency/ERD.jpg)
